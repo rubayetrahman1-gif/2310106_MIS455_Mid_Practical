@@ -235,3 +235,123 @@ button:hover, .button-link:hover, .nav-cart:hover {
 .cartIntro {
     color: #666666;
 }
+/* Contact Page */
+.contact-layout {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.contact-info img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contact-images {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.contact-images img {
+    width: 50%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 12px 0 6px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+
+.contact-form button {
+    margin-top: 15px;
+}
+
+.form-result {
+    color: green;
+}
+
+/* Opening Hours */
+.hours-section {
+    background-color: #f5f5f5;
+    padding: 25px;
+    margin-bottom: 40px;
+}
+
+.hours-list {
+    max-width: 500px;
+    margin: auto;
+}
+
+.hours-list p {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dddddd;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #222222;
+    border-top: 3px solid #f36b35;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+footer p:first-child {
+    color: #f36b35;
+    font-weight: bold;
+}
+
+/* Mobile Screen */
+@media (max-width: 700px) {
+    header, .hero, .feature-section, .container,
+    .contact-layout, footer {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero img, .feature-section img {
+        width: 100%;
+    }
+
+    .product-grid, .productContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-images {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 450px) {
+    .product-grid, .productContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-images img {
+        height: 140px;
+    }
+}
