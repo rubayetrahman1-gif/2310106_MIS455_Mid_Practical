@@ -38,3 +38,15 @@ function clearCart() {
     showCart();
     alert("Your cart has been cleared.");
 }
+function sendMessage() {
+    var name = document.getElementById("customerName").value;
+    var email = document.getElementById("customerEmail").value;
+    var message = document.getElementById("customerMessage").value;
+
+    if (name == "" || email == "" || message == "") {
+        alert("Please fill in all the fields.");
+    }
+    else {
+        document.getElementById("messageResult").innerHTML = "Thank you, " + name + "! Your message has been received.";
+    }
+}
